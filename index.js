@@ -8,7 +8,7 @@ const app = express();
 
 app.use(cors(
   {
-    origin: 'https://farmpal-3mtt-hoitj2tdp-chima-marcels-projects.vercel.app', 
+    origin: ['https://farmpal-3mtt-hoitj2tdp-chima-marcels-projects.vercel.app', 'https://farmpal-3mtt-hoitj2tdp-chima-marcels-projects.vercel.app', ]
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
   }
