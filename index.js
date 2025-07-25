@@ -6,7 +6,13 @@ import mongoose from 'mongoose';
 
 const app = express();
 
-app.use(cors()); // Enable CORS for all routes
+app.use(cors(
+  {
+    origin: 'https://farmpal-3mtt-hoitj2tdp-chima-marcels-projects.vercel.app', 
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true
+  }
+)); // Enable CORS for all routes
 app.use(express.urlencoded({ extended: true })); // Parse URL-encoded bodies
 app.use(express.json()); // Parse JSON bodies
 
