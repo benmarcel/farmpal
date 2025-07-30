@@ -29,7 +29,7 @@ app.use(cors({
 
 
 
-)); // Enable CORS for all routes
+
 app.use(express.urlencoded({ extended: true })); // Parse URL-encoded bodies
 app.use(express.json()); // Parse JSON bodies
 
