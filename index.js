@@ -8,7 +8,7 @@ const app = express();
 
 const allowedOrigins = [
   'https://farmpal-3mtt-hoitj2tdp-chima-marcels-projects.vercel.app',
-  'http://localhost:5000'
+  'http://localhost:5173'
 ];
 
 app.use(cors({
